@@ -1,0 +1,50 @@
+:root {
+    --background-section: #0B1035;
+    --white: #fff;
+    --amarelo: #FFF700;
+
+
+    --vermelho-html-opaco: rgba(242, 71, 18, 0.3);
+    --vermelho-html-opaco: rgba(242, 71, 18, 0.3);
+    --azul-css-opaco: rgba(3, 106, 177, 0.3);
+    --amarelo-js-opaco: rgba(255, 234, 167, 0.3);
+
+    --card-white-opaco: rgba(255, 255, 255, 0.4);
+
+    --amarelo-intermediario: #E7B306;
+    --azul-junior: #036AB1;
+
+    --background-botao-azul: rgba(18, 162, 243, 0.83);
+    --background-input-contatos: rgba(255, 255, 255, 0.22);
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden !important;
+}
+section {
+    background: var(--background-section);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+section h2 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    color: var(--white);
+    padding-top: 70px;
+}
+
+section .container{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+

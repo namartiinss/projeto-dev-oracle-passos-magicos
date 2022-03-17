@@ -1,0 +1,1108 @@
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('fontes/Poppins-Thin.ttf') format('truetype');
+    font-style: normal;
+}
+
+html body {
+    width: 100%;
+}
+
+
+header {
+    background-color: #0B1035;
+}
+
+/*ESSA PARTE É APENAS DO HEADER*/
+header {
+    background: #0B1035;
+}
+
+.container-btn {
+    display: none;
+}
+
+header .container {
+    padding-top: 40px;
+    max-width: 1100px;
+    font-family: Poppins;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+header .container img {
+    width: 100px;
+}
+
+header .container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+header .container ul a {
+    text-decoration: none;
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 60px;
+    margin-right: 28px;
+    color: #FFFFFF;
+    position: relative;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+header .container ul a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 4px #34FF00;
+    box-shadow: 0px 0px 4px #34FF00;
+    width: 50%;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+header .container ul a:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 616px) {
+
+    .container-btn {
+        height: 4%;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        display: block;
+        z-index: 1000;
+    }
+
+    #checkbox-menu {
+        position: absolute;
+        opacity: 0;
+    }
+
+    label {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        height: 22px;
+        width: 30px;
+    }
+
+    label span {
+        position: absolute;
+        display: block;
+        height: 5px;
+        width: 100%;
+        border-radius: 30px;
+        background: #FFF700;
+        -webkit-transition: 0.25s ease-in-out;
+        transition: 0.25s ease-in-out;
+    }
+
+    label span:nth-child(1) {
+        top: 0;
+    }
+
+    label span:nth-child(2) {
+        top: 8px;
+    }
+
+    label span:nth-child(3) {
+        top: 16px;
+    }
+
+    #checkbox-menu:checked+label span:nth-child(1) {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+
+    #checkbox-menu:checked+label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #checkbox-menu:checked+label span:nth-child(3) {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 8px;
+    }
+
+    header {
+        z-index: 1000;
+        position: fixed;
+        background: #0B1035;
+        left: 100%;
+        height: 100vh;
+        width: 100%;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    header .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    header .container ul {
+        margin-top: 50px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    header .container ul a {
+        margin-right: 0;
+    }
+
+    header .container ul li {
+        text-align: center;
+    }
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+.navBotao:hover {
+    box-shadow: 0px 0px 10px yellow;
+}
+
+/*ESSA PARTE É DESTINADA Á LOGO PROJETO DEV*/
+#logoProjetoDev {
+    padding-top: 7vh;
+    position: relative;
+    margin-bottom: 15vh;
+    margin-left: 10vh;
+}
+
+#logoProjetoDev h1 {
+    position: absolute;
+    left: 10vh;
+}
+
+.branco,
+.amarelo {
+    font-size: 10vh;
+    text-align: center;
+    animation: animação 2s linear forwards;
+}
+
+@keyframes animação {
+    0% {
+        filter: blur(7px);
+    }
+
+    100% {
+        filter: blur(0px);
+        text-shadow: 0 0 50px yellow, 0 0 20px yellow;
+    }
+}
+
+.branco {
+    color: white;
+}
+
+.amarelo {
+    color: yellow;
+}
+
+section p {
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/* ESSA PARTE É PARA A LOGO DA MENINA HERO E BOTÃO "VAMOS AO DESAFIO" */
+section div div {
+    display: inline-block;
+}
+
+.boxMeninaHero {
+    display: flex;
+    flex-direction: row;
+}
+
+#meninaHero {
+    padding-left: 20vh;
+}
+
+#divVamosAoDesafio {
+    position: relative;
+    bottom: 300px;
+    left: 150px;
+}
+
+section div span a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 60px;
+    color: #FFFFFF;
+    position: relative;
+    -webkit-transition: .3s;
+    transition: .3s;
+
+    margin: 170px;
+}
+
+section div span a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 4px #34FF00;
+    box-shadow: 0px 0px 4px #34FF00;
+    width: 50%;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+section div span a:hover::after {
+    width: 100%;
+}
+
+
+/*ESSA PARTE PERTENCE AOS ICONES HTML, CSS E JS*/
+#icons{
+    padding-top: 54px;
+    font-family: "Poppins";
+    display:flex;
+    justify-content: space-between;
+    color: #fff;
+}
+#icons p{
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+#icons span{
+    line-height: 24px;
+
+}
+#icons > div{
+    width: 348px;
+}
+
+
+body .nossos-challenges .desafio {
+    border-radius: 20px;
+}
+
+body .nossos-challenges span {
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.nossos-challenges {
+    padding-bottom: 50px;
+    position: relative;
+}
+
+#desafioHTML,
+#desafioCSS,
+#desafioJS{
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#desafioHTML {
+    background-color: rgba(255, 68, 0, 0.300);
+}
+#desafioCSS {
+    background-color: rgba(0, 0, 255, 0.300);
+}
+#desafioJS {
+    background-color: rgba(255, 255, 0, 0.300);
+}
+
+/*ESSA SEÇÃO É SEPARADA PARA OS DESAFIOS*/
+.desafiosPropostos {
+    background-color: rgba(255, 255, 255, 0.360);
+    height: 600px;
+    width: auto;
+    padding: 40px 30px 40px 30px;
+    margin: 8px;
+    border-radius: 15px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.desafiosPropostos p{
+    font-size: 1.5rem;
+}
+.desafiosPropostos p, .nossos-challenges span{
+    text-align: left;
+}
+.container-img{
+    width: 100%;
+    text-align: center;
+}
+.desafiosPropostos,
+img {
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+
+#boxDesafios {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    position: relative;
+
+}
+
+.desafiosPropostos .box {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    text-align: center;
+}
+
+.desafiosPropostos:hover {
+    background-color: rgba(255, 255, 255, 0.200);
+    box-shadow: 0px 0px 20px blue;
+    transition: 0.7s;
+}
+
+.nossos-challenges .botao {
+    width: 301px;
+    height: 60px;
+    background-color: #12a2f3;
+    text-align: center;
+
+    border-radius: 10px;
+    justify-content: center;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    text-transform:uppercase;
+    font-size:1.2rem;
+}
+
+.nossos-challenges #botaoVMD {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+/* ESSA SEÇÃO É PARA A PARTE DE DEPOIMENTOS */
+#depoimentos #divH2 {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+}
+
+#imagensFlutuantes {
+    display: flex;
+    flex-direction: row;
+}
+
+section#depoimentos {
+    padding-bottom: 5%;
+}
+
+.containerImages {
+    position: relative;
+    height: 1060px;
+}
+
+.containerImages #perfil2 {
+    position: absolute;
+    left: 20%;
+    top: 60%;
+}
+
+.containerImages #perfil1 {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+}
+
+.containerImages #perfil3 {
+    position: absolute;
+    left: 27%;
+    top: 45%;
+}
+
+.containerImages #perfil4 {
+    position: absolute;
+    left: 35%;
+    top: 80%;
+}
+
+.containerImages #perfil5 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.containerImages #aspas {
+    position: absolute;
+    left: 46%;
+    top: 83%;
+}
+
+.containerImages #perfil6 {
+    position: absolute;
+    left: 60%;
+    top: 90%;
+}
+
+.containerImages #perfil7 {
+    position: absolute;
+    left: 65%;
+    top: 65%;
+}
+
+.containerImages #perfil8 {
+    position: absolute;
+    left: 75%;
+    top: 85%;
+}
+
+.containerImages #perfil9 {
+    position: absolute;
+    left: 75%;
+    top: 50%;
+}
+
+
+.depoimento {
+    text-align: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 100px 0px;
+    letter-spacing: 2px;
+}
+
+.depoimento p {
+    padding: 10px 50px;
+}
+
+.depoimento .arrow:hover {
+    box-shadow: 0px 0px 30px rgb(251, 255, 0);
+    transition: 0.8s;
+}
+
+.depoimento .arrow:hover {
+    height: 7px;
+    width: 7px;
+    transition: 0.1s;
+}
+
+section.depoimentos .container .nomeAluno .p-amarelo {
+    color: yellow;
+}
+
+section.depoimentos .container .nomeAluno {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+.carousel-wrapper {
+    height: 400px;
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+    padding-left: 30vh;
+    text-align: center;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 100px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.carousel-wrapper h3 {
+    font-family: "Poppins";
+    color: white;
+    font-size: xx-large;
+
+    padding-bottom: 10%;
+}
+
+.amarelinho {
+    color: yellow;
+}
+
+.arrow {
+    border: solid yellow;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev {
+    left: -30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+    right: -30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.light {
+    color: white;
+}
+
+@media (max-width: 480px) {
+
+    .arrow,
+    .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+    }
+}
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background-color: #0B1035;
+}
+
+.item-2 {
+    background-color: #0B1035;
+}
+
+.item-3 {
+    background-color: #0B1035;
+}
+
+*:target~.item-1 {
+    opacity: 0;
+}
+
+#item-1:target~.item-1 {
+    opacity: 1;
+}
+
+#item-2:target~.item-2,
+#item-3:target~.item-3 {
+    z-index: 3;
+    opacity: 1;
+}
+
+/*DESIGN RESPONSIVO*/
+
+@media screen and (max-width: 1400px) {
+    #meninaHero {
+        margin-left: 35vh;
+    }
+
+    #divVamosAoDesafio {
+        display: flexbox;
+        top: 50vh;
+        left: -10vh;
+    }
+}
+
+
+@media screen and (max-width: 1090px) {
+    #icons{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0pxpadding-top;
+    }
+    #icons div{
+        text-align: center;
+    }
+    #meninaHero {
+        margin-left: 20vh;
+    }
+
+    #boxDesafios {
+        margin: 5vh 20%;
+        display: block;
+    }
+
+    .desafiosPropostos {
+        height: 500px;
+        width: auto;
+    }
+
+
+    #perfil4,
+    #perfil6 {
+        display: none;
+    }
+
+    #perfil6 {
+        left: 30%;
+    }
+
+    .carousel-item {
+        width: 500px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #aspas {
+        left: 45.5%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    
+    #boxDesafios {
+        display: block;
+        margin: 0 10%;
+        padding-top: 10vh;
+        height: 1200px;
+    }
+    .nossos-challenges #botaoVMD{
+        padding-top:0px;
+    }
+
+    #meninaHero {
+        padding-top: 5vh;
+        padding-left: 0vh;
+    }
+
+    #divVamosAoDesafio {
+        display: none;
+    }
+
+    .carousel-wrapper {
+        width: 600px;
+    }
+
+    .desafiosPropostos {
+        width: auto;
+        height: 580px;
+    }
+
+    .desafiosPropostos span {
+        font-size: 1.4em;
+    }
+
+    #boxCoca-Cola,
+    #boxLogin {
+        position: relative;
+    }
+
+    div.containerImages {
+        height: 1000px;
+    }
+
+    .nossos-challenges #botaoVMD {
+        padding-bottom: 0%;
+    }
+
+    .containerImages #perfil5 {
+        height: 240px;
+    }
+
+}
+
+@media screen and (max-width: 830px) {
+    #meninaHero {
+        margin-left: 50px;
+    }
+
+    .carousel-wrapper {
+        width: auto;
+    }
+
+    .carousel-item {
+        width: 350px;
+        height: 300px;
+    }
+
+    .carousel-item h3 {
+        font-size: x-large;
+    }
+
+    #perfil7 {
+        padding-left: 70px;
+    }
+
+    #perfil5 {
+        padding-left: 10px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    #perfil5 {
+        padding-left: 10px;
+    }
+
+    .boxIcons {
+        max-width: 405px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    #perfil5 {
+        padding-left: 10px;
+    }
+
+    .boxIcons {
+        max-width: 400px;
+    }
+
+}
+
+
+@media screen and (max-width: 720px) {
+    #meninaHero {
+        margin-left: 0px;
+        margin: auto;
+    }
+
+    #perfil5 {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    #meninaHero {
+        width: 400px;
+        padding-left: 30%;
+    }
+
+    #logoProjetoDev {
+        margin: 0 0 20% 0;
+    }
+
+    #logoProjetoDev h1 {
+        position: absolute;
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #boxDesafios {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 616px) {
+    #meninaHero {
+        padding: 35px 0px 20px 100px;
+    }
+
+    #perfil5 {
+        padding-left: 10%;
+    }
+
+}
+
+@media screen and (max-width: 570px) {
+    #boxDesafios {
+        margin-left: 15px;
+    }
+
+    .carousel-item h3 {
+        font-size: 23px;
+    }
+
+    .carousel-item {
+        width: 239px;
+        padding: 10px 30px;
+    }
+
+    .carousel-item h3{
+        font-size: 16px;
+        line-height: 23px;
+        margin-top: 18px;
+    }
+
+    #perfil3 {
+        padding-left: 20%;
+    }
+
+    #perfil1 {
+        padding-left: -10%;
+    }
+
+    #perfil9 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 538px) {
+    #boxDesafios {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .desafiosPropostos .imgDesafio {
+        width: 300px;
+    }
+
+    .desafiosPropostos {
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+    }
+
+    #boxDesafios {
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 510px) {
+    #meninaHero {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+
+    #meninaHero {
+        padding-top: 100px;
+    }
+
+    .container h2 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #perfil1,
+    #perfil3,
+    #perfil7,
+    #perfil8,
+    #perfil2 {
+        display: none;
+    }
+
+    .containerImages h2 {
+        padding-top: 30%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .desafiosPropostos span {
+        font-size: 16px;
+    }
+
+    .desafiosPropostos {
+        height: 500px;
+    }
+
+    #botaoVMD {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    #logoProjetoDev {
+        width: 320px;
+    }
+
+    #logoProjetoDev h1 {
+        font-size: 10px;
+        letter-spacing: 0px;
+    }
+
+    #meninaHero {
+        width: 320px;
+        padding-top: 50px;
+    }
+
+    .branco,
+    .amarelo {
+        font-size: 7.8vh;
+    }
+
+    .containerImages {
+        height: auto;
+
+    }
+}
+
+@media screen and (max-width: 410px) {
+    #meninaHero {
+        padding-left: 0px;
+    }
+
+    .imgDesafio {
+        width: 280px;
+    }
+
+    #desafioLogin {
+        width: 310px;
+    }
+
+    .box {
+        position: relative;
+    }
+
+    #desafioJr {
+        position: absolute;
+        right: 0;
+    }
+
+    .desafiosPropostos {
+        width: 310px;
+
+    }
+
+    .carousel-wrapper > div {
+        width: 90%;
+        max-width: 300px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .carousel-item h3 {
+        font-size: 16px;
+    }
+
+    .carousel-item {
+        padding: 5vh 0vh;
+    }
+
+    .botao {
+        font-size: 16px;
+    }
+
+    .arrow-prev {
+        top: -10%;
+        left: 0px;
+    }
+
+    .arrow-next {
+        top: -10%;
+        right: 0px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+
+    .desafiosPropostos,
+    #desafioLogin {
+        width: 290px;
+    }
+
+    .imgDesafio {
+        width: 270px;
+    }
+
+    .desafio {
+        margin-right: 0px;
+    }
+
+    #desafioIntermediario {
+        position: absolute;
+        right: 0;
+        padding-top: 5PX;
+        bottom: 5%;
+    }
+
+    .desafiosPropostos {
+        padding-right: 10px;
+        padding-left: 0px;
+        margin-left: 10px;
+    }
+
+    .desafiosPropostos p {
+        font-size: medium;
+    }
+
+    #botaoVMD {
+        width: auto;
+    }
+}
+
+
+.contatos :is(input[type=email], input[type=text]){
+   margin-bottom: 20px;
+   height:50px !important;
+   padding: 0em;
+   padding-left: 20px;
+}
+
+.contatos #mensagem{
+    width: 438px;
+}
+
+@media(max-width: 700px){
+    .contatos #mensagem{
+        width: 100%;
+        left: -28px;
+        position: relative;
+    }
+
+    .imagem-computador{
+        width: 300px !important;
+    }
+    .branco, .amarelo{
+        font-size:2.5rem;
+    }
+
+    
+}
